@@ -1,0 +1,139 @@
+html {
+  font-family: monospace;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+b {
+  color: red;
+}
+.dm {
+  background-color: transparent;
+  color :#fd8d14;
+}
+.darkmode  {
+  background-color: rgb(17, 16, 16);
+  color: #45cfdd;
+}
+header {
+  box-shadow: -3px 7px 20px 3px #45cfdd;
+  color: #45cfdd;
+  text-align: center;
+  width: 95%;
+  padding: 2px;
+  border: none;
+  border-radius: 8px;
+  background-color: #35155D;
+}
+main {
+  text-align: center;
+}
+input {
+  background-color: bisque;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 50%;
+  height: auto;
+  padding: 8px;
+  border: 4px solid #35155D;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+.LuasSegitiga {
+  align-items: center;
+}
+.input_luas {
+  align-self: center;
+}
+.input_keliling {
+  text-align: center;
+}
+img {
+  width: 40%;
+  display: block;
+  height: auto;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input:hover {
+  border-color: #fd8d14;
+}
+input:focus {
+  border-color: #45cfdd;
+}
+.gambar {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.btn {
+  text-align: center;
+}
+button {
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: wheat;
+}
+
+button:hover {
+  color: #45cfdd;
+}
+
+button:active {
+  transition-duration: 0s;
+  transform: translatey(1px);
+  background-color: #fd8d14;
+}
+/* Responsive */
+@media only screen and (max-width: 1024px) {
+    
+  #auto{
+      padding: 30px;
+      width: 80%;
+  }
+  #auto img{
+      width: 50%;
+  }
+
+  button{
+      width: 80px;
+  }
+}
+/*Responsive */
+footer{
+  background-color: #35155D;
+  padding: 20px;
+  color: white;
+  width: 100%;
+  text-align: center;
+}

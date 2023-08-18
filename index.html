@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Luas dan Keliling Segitiga</title>
+  </head>
+  <body>
+    <header>
+      <h1>Kalkulator Luas & Keliling Segitiga</h1>
+      <button onclick="dark()" class="dm" >DarkMode</button>
+    </header>
+    <main>
+      <section class="LuasSegitiasa">
+        <!--DESKRIPSI RUMUS LUAS SEGITIGA-->
+        <img src="assets/Luas_Segitiga_blue.svg" alt="luas segitiga" />
+        <h2>Rumus Luas Segitiga :</h2>
+        <h4>Luas = 1/2 x a x t</h4>
+
+        <!--INPUT NILAI LUAS-->
+        <form class="input_luas" id="auto" onsubmit="event.preventDefault();">
+          <label for="alas"> Alas : </label>
+          <input type="number" id="alas" placeholder="alas" />
+
+          <label for="tinggi"> Tinggi : </label>
+          <input type="number" id="tinggi" placeholder="tinggi" />
+          <input type="text" id="hasil_Lu" placeholder="Hasil" />
+          <section class="btn">
+            <!--TOMBOL-->
+            <button id="hitung1">Hitung</button>
+            <button type="reset" id="reset1">Reset</button>
+          </section>
+        </form>
+        <br />
+      </section>
+
+      <section class="KelilingSegitiga">
+        <!--DESKRIPSI RUMUS KELILING SEGITIGA-->
+        <img src="assets/Keliling_Segitiga_blue.svg" alt="keliling segitiga" />
+        <h2>Rumus Keliling Segitiga :</h2>
+        <h4>Keliling = sisi a + sisi b + sisi c</h4>
+        <!--INPUT NILAI Keliling-->
+        <form
+          class="input_keliling"
+          id="auto"
+          onsubmit="event.preventDefault();"
+        >
+          <label for="sisia-input">sisi a :</label>
+          <input type="number" id="sisi_a" placeholder="sisi a" />
+
+          <label for="sisib-input">sisi b :</label>
+          <input type="number" id="sisi_b" placeholder="sisi b" />
+
+          <label for="sisic-input">sisi c :</label>
+          <input type="number" id="sisi_c" placeholder="sisi c" />
+          <input id="hasil_Kel" placeholder="Hasil" />
+          <section class="btn">
+            <!--TOMBOL-->
+            <button id="hitung2">Hitung</button>
+            <button type="reset" id="reset2">Reset</button>
+          </section>
+        </form>
+      </section>
+    </main>
+  </body>
+  <footer>
+    Copyright © 2023 by
+    <a href="mailto:tonysyaputra771@gmail.com" target="_blank"
+      >Ahmad Tonny Syaputra</a
+    >. All Rights Reserved. Pusing Designnya hehe <b>:(</b>
+  </footer>
+  <script src="script.js"></script>
+</html>
